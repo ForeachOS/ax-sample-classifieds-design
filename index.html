@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Devoxx</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+</head>
+<body>
+
+<nav class="navigation-row row">
+        <div class="logo pull-left">
+            <a href="./index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Homepage</a>
+        </div>
+        <div class="nav pull-right">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="./category.html">Category</a>
+                </li>
+            </ul>
+        </div>
+</nav>
+
+<div class="hero">
+        <img src="./img/hero.jpg"/>
+</div>
+
+<div>
+    <h1>Homepage</h1>
+    <p>
+        This is the homepage that uses the default layout for rendering. The default layout contains a top menu
+        and adds the <a target="_blank" href="http://www.getbootstrap.com">Bootstrap css</a>.
+        The custom page will not use the layout.
+    </p>
+    <p>
+        The top menu item is selected automatically based on the request path.
+    </p>
+    <p>
+        The homepage includes a page specific script that writes a console log message.
+    </p>
+    <p>
+        Message source: <strong>[[#{sample.message}]]</strong>
+    </p>
+</div>
+
+<div class="categories">
+        <div class="category-item"><a href="./category.html">Sports & Gear</a></div>
+		<div class="category-item"><a href="./category.html">Music & Instruments</a></div>
+		<div class="category-item"><a href="./category.html">Electronics</a></div>
+    </div>
+    <div class="classifieds">
+        <h4>Most recent classifieds</h4>
+        <div class="classified-item">
+			<a href="./detail.html">
+				<div class="classified-item-seller col-md-2">
+					<img src="./img/avatar.png"/>
+					<p>Joshua Johnson</p>
+				</div>
+				<div class="classified-item-description col-md-10 inline-block">
+					<p>Mountainbike</p>
+					<div>
+						<p>We have a huge variation of second hand bikes with a great range of price. We also have a small selection of childrens' bikes... (read more)</p>
+					</div>
+				</div>
+			</a>
+        </div>
+		<div class="classified-item">
+			<a href="./detail.html">
+				<div class="classified-item-seller col-md-2">
+					<img src="./img/avatar.png"/>
+					<p>Joshua Johnson</p>
+				</div>
+				<div class="classified-item-description col-md-10 inline-block">
+					<p>Guitar</p>
+					 <div>
+						<p>Looking to sell this lovely second hand guitar that I purchased at Glastonbury Festival only two months ago. Was given new... (read more)</p>
+					</div>
+				</div>
+			</a>
+        </div>
+			<div class="classified-item">
+			<a href="./detail.html">
+				<div class="classified-item-seller col-md-2">
+					<img src="./img/avatar.png"/>
+					<p>Joshua Johnson</p>
+				</div>
+				<div class="classified-item-description col-md-10 inline-block">
+					<p>Canon EOS digital SLR camera</p>
+					<div>
+						<p>Expand your photography horizons with the Canon EOS 80D digital SLR camera. Delivering pro-level image quality... (read more)</p>
+					</div>
+				</div>
+			</a>
+        </div>
+    </div>
+
+<script type="text/javascript" href="./js/main.js"></script>
+</body>
+</html>

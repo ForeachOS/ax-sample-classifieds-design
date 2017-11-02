@@ -1,0 +1,89 @@
+p {
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero {
+
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    margin: 10px 20px;
+    border: solid red 5px;
+}
+
+.category-item:hover {
+    cursor: pointer;
+}
+
+.classifieds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classified-item {
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px;
+    width: 96%;
+    height: 100px;
+    margin: 1% 2%;
+    border: solid blue 5px
+}
+
+.classified-item:hover {
+    cursor: pointer;
+}
+
+.description {
+    border: solid orange 5px;
+}
+
+.info {
+    border: solid green 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+.price {
+    padding: 5% 5%;
+    border: solid greenyellow 5px;
+}
+
+.logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+}
+
+.classified-item-seller img{
+    max-height: 50px;
+}
+
+.seller>p{
+    text-align: center;
+}
+
+.question {
+    font-weight: bold;
+}
